@@ -1,0 +1,13 @@
+# wrangler.toml — Email Summary Bot Worker (Final)
+name = "email-summary-bot"
+main = "worker-oauth.js"
+compatibility_date = "2025-07-24"
+
+# KV Namespaces (will be created by commands below)
+kv_namespaces = [
+  { binding = "USER_TOKENS", id = "PLACEHOLDER_TOKENS" },
+  { binding = "USER_STATE", id = "PLACEHOLDER_STATE" }
+]
+
+[vars]
+OAUTH_REDIRECT_URI = "https://email-summary-bot.PLACEHOLDER.workers.dev/oauth/callback"
